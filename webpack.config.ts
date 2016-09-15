@@ -1,11 +1,12 @@
 var webpack = require('webpack');
 var path = require('path');
 var resolveNgRoute = require('@angularclass/resolve-angular-routes');
+var extractTextPlugin = require ('extract-text-webpack-plugin');
 
 
 var commonConfig = {
   resolve: {
-    extensions: ['', '.ts', '.js', '.json']
+    extensions: ['', '.ts', '.js', '.json','.scss']
   },
   module: {
     preLoaders: [
@@ -64,6 +65,33 @@ var serverConfig = {
 };
 
 
+//Styles config
+var stylesConfig = {
+  target:"web",
+  entry: {'global':'./src/theme/main.scss'},
+  module: {
+    loaders: [
+      {test: /\.(sass|scss)$/,  loader:extractTextPlugin.extract({
+        fallbackLoader: 'style-loader',
+        loader: ['css', 'sass']
+      }) },
+      {test: /\.css$/, loader: 'style-loader!css-loader'},
+      {test: /\.png$/, loader: 'url-loader?limit=100000'},
+      {test: /\.jpg$/, loader: 'file-loader'},
+      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
+      { test: /\.(ttf|eot|svg|woff2|woff)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader?name=[path][name].[ext]" },
+    ]
+  },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+        name: ['global']
+    }),
+    new extractTextPlugin({
+      filename: './dist/client/[name].css',
+      allChunks: true
+    })
+  ]
+};
 
 // Default config
 var defaultConfig = {
@@ -83,6 +111,9 @@ var webpackMerge = require('webpack-merge');
 module.exports = [
   // Client
   webpackMerge({}, defaultConfig, commonConfig, clientConfig),
+
+  //Styles
+  webpackMerge({}, defaultConfig, commonConfig, stylesConfig),
 
   // Server
   webpackMerge({}, defaultConfig, commonConfig, serverConfig)
