@@ -60,11 +60,11 @@ function ngApp(req, res) {
 // Routes with html5pushstate
 // ensure routes match client-side-app
 
-app.get('/', (req, res) => res.render('index', {req, res}));
-app.get('/home', (req, res) => res.render('index', {req, res}));
-app.get('/home/*', (req, res) => res.render('index', {req, res}));
-app.get('/second', (req, res) => res.render('index', {req, res}));
-app.get('/second/*', (req, res) => res.render('index', {req, res}));
+app.get('/', ngApp);
+app.get('/home', ngApp);
+app.get('/home/*', ngApp);
+app.get('/second', ngApp);
+app.get('/second/*', ngApp);
 
 
 app.get('*', function(req, res) {
