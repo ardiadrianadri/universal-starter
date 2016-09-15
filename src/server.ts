@@ -30,13 +30,30 @@ app.use(bodyParser.json());
 app.use('/assets', express.static(path.join(__dirname, 'assets'), {maxAge: 30}));
 app.use(express.static(path.join(ROOT, 'dist/client'), {index: false}));
 
+// START DEFINITION OF MOCK *****************************************
+
+app.get('/service/menu', (req,res)=>{
+  let menu = {
+    title:'Angular Universal Starter',
+    options: [{
+      title:'Home',
+      route:'home'
+    },{
+      title:'Second',
+      route:'second'
+    }]
+  }
+});
+
+// ENDS DEFINITION OF MOCK ******************************************
+
 // Routes with html5pushstate
 // ensure routes match client-side-app
 app.get('/', (req, res) => res.render('index', {req, res}));
-app.get('/about', (req, res) => res.render('index', {req, res}));
-app.get('/about/*', (req, res) => res.render('index', {req, res}));
 app.get('/home', (req, res) => res.render('index', {req, res}));
 app.get('/home/*', (req, res) => res.render('index', {req, res}));
+app.get('/second', (req, res) => res.render('index', {req, res}));
+app.get('/second/*', (req, res) => res.render('index', {req, res}));
 
 
 app.get('*', function(req, res) {
