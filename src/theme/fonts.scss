@@ -1,2 +1,2 @@
-$bootstrap-sass-asset-helper: false !default;
-$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/") !default;
+
+$icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
