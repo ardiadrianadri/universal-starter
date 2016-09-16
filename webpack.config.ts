@@ -70,7 +70,7 @@ var serverConfig = {
 //Styles config
 var stylesConfig = {
   target:"web",
-  entry: {'global':'./src/theme/main.scss'},
+  entry: {'global':'./theme/main.scss'},
   module: {
     loaders: [
       {test: /\.(sass|scss)$/,  loader:extractTextPlugin.extract({
