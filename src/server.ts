@@ -45,6 +45,7 @@ app.get('/service/menu', (req,res)=>{
       route:'second'
     }]
   }
+  res.json(menu);
 });
 
 // ENDS DEFINITION OF MOCK ******************************************

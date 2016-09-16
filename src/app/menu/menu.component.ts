@@ -12,7 +12,7 @@ import { MenuService } from './menu.service';
                 <span class="navbar-brand" href="#">{{menuConfig.title}}</span>
             </div>
             <ul class="nav navbar-nav">
-                <li *ngFor="let option of menuConfig.options" ><a routerLink="/{{option.route}}">{{option.title}}</a></li>
+                <li *ngFor="let option of menuConfig.options" ><a routerLink="/{{option.route}}" routerLinkActive="active">{{option.title}}</a></li>
             </ul>
         </div><!-- /.container-fluid -->
     </nav>`
