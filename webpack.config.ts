@@ -26,8 +26,10 @@ var commonConfig = {
       root('./src'),
       resolveNgRoute(root('./src'))
     )
-  ]
-
+  ],
+  watchOptions: {
+    poll: true
+  }
 };
 
 
