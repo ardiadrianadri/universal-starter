@@ -1,0 +1,68 @@
+14:56:36.068 INFO - Launching a standalone Selenium Server
+14:56:36.120 INFO - Java: Oracle Corporation 24.111-b01
+14:56:36.120 INFO - OS: Linux 3.13.0-95-generic amd64
+14:56:36.140 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
+14:56:36.237 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match the current platform LINUX
+14:56:36.237 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+registration capabilities Capabilities [{platform=WINDOWS, browserName=MicrosoftEdge, version=}] does not match the current platform LINUX
+14:56:36.237 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+14:56:36.238 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+14:56:36.239 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+registration capabilities Capabilities [{platform=MAC, browserName=safari, version=}] does not match the current platform LINUX
+14:56:36.239 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+14:56:36.239 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+14:56:36.325 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+14:56:36.325 INFO - Selenium Server is up and running
+14:57:39.049 INFO - Executing: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@7b27751c, javascriptEnabled=true, browserName=phantomjs, handlesAlerts=true, requestOrigins={name=webdriverio, url=http://webdriver.io, version=4.2.15}, rotatable=true, locationContextEnabled=true}]])
+14:57:39.074 INFO - Creating a new session for Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@7b27751c, javascriptEnabled=true, browserName=phantomjs, handlesAlerts=true, requestOrigins={name=webdriverio, url=http://webdriver.io, version=4.2.15}, rotatable=true, locationContextEnabled=true}]
+14:57:39.095 INFO - executable: /vagrant/universal-starter/node_modules/.bin/phantomjs
+14:57:39.095 INFO - port: 24489
+14:57:39.096 INFO - arguments: [--webdriver=24489, --webdriver-logfile=/vagrant/universal-starter/phantomjsdriver.log]
+14:57:39.096 INFO - environment: {}
+[INFO  - 2016-09-16T14:57:39.761Z] GhostDriver - Main - running on port 24489
+[INFO  - 2016-09-16T14:57:39.916Z] Session [e9c2c390-7c1d-11e6-916b-17f00f948124] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-09-16T14:57:39.917Z] Session [e9c2c390-7c1d-11e6-916b-17f00f948124] - page.customHeaders:  - {}
+[INFO  - 2016-09-16T14:57:39.918Z] Session [e9c2c390-7c1d-11e6-916b-17f00f948124] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-09-16T14:57:39.918Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: e9c2c390-7c1d-11e6-916b-17f00f948124
+14:57:39.975 INFO - Done: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@7b27751c, javascriptEnabled=true, browserName=phantomjs, handlesAlerts=true, requestOrigins={name=webdriverio, url=http://webdriver.io, version=4.2.15}, rotatable=true, locationContextEnabled=true}]]
+14:57:40.020 INFO - Executing: [get: http://localhost:3000])
+14:57:40.041 INFO - Done: [get: http://localhost:3000]
+14:57:40.060 INFO - Executing: [get title])
+14:57:40.105 INFO - Done: [get title]
+14:57:40.121 INFO - Executing: [delete session: 4e0a6096-19f5-46a7-a444-1bcb9be189f1])
+[INFO  - 2016-09-16T14:57:40.168Z] ShutdownReqHand - _handle - About to shutdown
+14:57:40.243 INFO - Done: [delete session: 4e0a6096-19f5-46a7-a444-1bcb9be189f1]
+14:58:27.618 INFO - Executing: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@648596b2, javascriptEnabled=true, browserName=phantomjs, handlesAlerts=true, requestOrigins={name=webdriverio, url=http://webdriver.io, version=4.2.15}, rotatable=true, locationContextEnabled=true}]])
+14:58:27.619 INFO - Creating a new session for Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@648596b2, javascriptEnabled=true, browserName=phantomjs, handlesAlerts=true, requestOrigins={name=webdriverio, url=http://webdriver.io, version=4.2.15}, rotatable=true, locationContextEnabled=true}]
+14:58:27.627 INFO - executable: /vagrant/universal-starter/node_modules/.bin/phantomjs
+14:58:27.627 INFO - port: 9363
+14:58:27.627 INFO - arguments: [--webdriver=9363, --webdriver-logfile=/vagrant/universal-starter/phantomjsdriver.log]
+14:58:27.627 INFO - environment: {}
+[INFO  - 2016-09-16T14:58:27.771Z] GhostDriver - Main - running on port 9363
+[INFO  - 2016-09-16T14:58:27.809Z] Session [064e80d0-7c1e-11e6-9bd9-d332451b8ed9] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-09-16T14:58:27.810Z] Session [064e80d0-7c1e-11e6-9bd9-d332451b8ed9] - page.customHeaders:  - {}
+[INFO  - 2016-09-16T14:58:27.810Z] Session [064e80d0-7c1e-11e6-9bd9-d332451b8ed9] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-09-16T14:58:27.810Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 064e80d0-7c1e-11e6-9bd9-d332451b8ed9
+14:58:27.813 INFO - Done: [new session: Capabilities [{loggingPrefs=org.openqa.selenium.logging.LoggingPreferences@648596b2, javascriptEnabled=true, browserName=phantomjs, handlesAlerts=true, requestOrigins={name=webdriverio, url=http://webdriver.io, version=4.2.15}, rotatable=true, locationContextEnabled=true}]]
+14:58:27.858 INFO - Executing: [get: http://localhost:3000])
+[ERROR - 2016-09-16T14:58:28.336Z] Session [064e80d0-7c1e-11e6-9bd9-d332451b8ed9] - page.onError - msg: ReferenceError: Can't find variable: WeakMap
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2016-09-16T14:58:28.336Z] Session [064e80d0-7c1e-11e6-9bd9-d332451b8ed9] - page.onError - stack:
+  then (http://localhost:3000/index.js:76669)
+  lib$es6$promise$$internal$$tryThen (http://localhost:3000/index.js:75970)
+  (anonymous function) (http://localhost:3000/index.js:75979)
+  lib$es6$promise$asap$$flush (http://localhost:3000/index.js:75909)
+
+  phantomjs://platform/console++.js:263 in error
+14:58:28.352 INFO - Done: [get: http://localhost:3000]
+14:58:28.380 INFO - Executing: [get title])
+14:58:28.425 INFO - Done: [get title]
+14:58:28.440 INFO - Executing: [find elements: By.xpath: //h1[normalize-space() = "Hello World"]])
+14:58:28.524 INFO - Done: [find elements: By.xpath: //h1[normalize-space() = "Hello World"]]
+14:58:28.529 INFO - Executing: [get text: 0 [[PhantomJSDriver: phantomjs on LINUX (064e80d0-7c1e-11e6-9bd9-d332451b8ed9)] -> xpath: //h1[normalize-space() = "Hello World"]]])
+14:58:28.554 INFO - Done: [get text: 0 [[PhantomJSDriver: phantomjs on LINUX (064e80d0-7c1e-11e6-9bd9-d332451b8ed9)] -> xpath: //h1[normalize-space() = "Hello World"]]]
+14:58:28.567 INFO - Executing: [delete session: c47c6d8c-bd30-4194-8b66-a14abf3a6d79])
+[INFO  - 2016-09-16T14:58:28.612Z] ShutdownReqHand - _handle - About to shutdown
+14:58:28.680 INFO - Done: [delete session: c47c6d8c-bd30-4194-8b66-a14abf3a6d79]
