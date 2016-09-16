@@ -5,6 +5,7 @@ import * as path from 'path';
 import * as express from 'express';
 import * as bodyParser from 'body-parser';
 import * as cookieParser from 'cookie-parser';
+import { mocks } from './mocks';
 
 // Angular 2
 import { enableProdMode } from '@angular/core';
@@ -34,18 +35,8 @@ app.use(express.static(path.join(ROOT, 'dist/client'), {index: false}));
 
 // START DEFINITION OF MOCK *****************************************
 
-app.get('/service/menu', (req,res)=>{
-  let menu = {
-    title:'Angular Universal Starter',
-    options: [{
-      title:'Home',
-      route:'home'
-    },{
-      title:'Second',
-      route:'second'
-    }]
-  }
-  res.json(menu);
+mocks.forEach((mock) => {
+  app.get(mock.url, mock.middleware);
 });
 
 // ENDS DEFINITION OF MOCK ******************************************
