@@ -4,7 +4,7 @@
 /typings
 /tsd_typings/
 npm-debug.log
-
+selenium
 /dist/
 
 .idea
