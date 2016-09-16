@@ -7,6 +7,7 @@ describe ('Home web test', function () {
 
     //Get the title of the web. It is a good idea to do it allways to check that 
     //we are in the right web
+    debugger;
     var title = browser.getTitle();
     assert.equal(title,'Angular 2 Universal Starter');
 
